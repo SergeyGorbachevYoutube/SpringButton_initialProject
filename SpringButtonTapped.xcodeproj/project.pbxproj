@@ -10,7 +10,6 @@
 		D8DC7BBB26F8BAF800449FCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DC7BBA26F8BAF800449FCC /* AppDelegate.swift */; };
 		D8DC7BBD26F8BAF800449FCC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DC7BBC26F8BAF800449FCC /* SceneDelegate.swift */; };
 		D8DC7BBF26F8BAF800449FCC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DC7BBE26F8BAF800449FCC /* ViewController.swift */; };
-		D8DC7BC226F8BAF800449FCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8DC7BC026F8BAF800449FCC /* Main.storyboard */; };
 		D8DC7BC426F8BAFE00449FCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8DC7BC326F8BAFE00449FCC /* Assets.xcassets */; };
 		D8DC7BC726F8BAFE00449FCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8DC7BC526F8BAFE00449FCC /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -20,7 +19,6 @@
 		D8DC7BBA26F8BAF800449FCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8DC7BBC26F8BAF800449FCC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D8DC7BBE26F8BAF800449FCC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D8DC7BC126F8BAF800449FCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8DC7BC326F8BAFE00449FCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8DC7BC626F8BAFE00449FCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8DC7BC826F8BAFE00449FCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +54,38 @@
 		D8DC7BB926F8BAF800449FCC /* SpringButtonTapped */ = {
 			isa = PBXGroup;
 			children = (
+				D8DC7BCE26F8BB3800449FCC /* Application */,
+				D8DC7BCF26F8BB5E00449FCC /* Controllers */,
+				D8DC7BD026F8BBD400449FCC /* Resources */,
+			);
+			path = SpringButtonTapped;
+			sourceTree = "<group>";
+		};
+		D8DC7BCE26F8BB3800449FCC /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				D8DC7BBA26F8BAF800449FCC /* AppDelegate.swift */,
 				D8DC7BBC26F8BAF800449FCC /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D8DC7BCF26F8BB5E00449FCC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				D8DC7BBE26F8BAF800449FCC /* ViewController.swift */,
-				D8DC7BC026F8BAF800449FCC /* Main.storyboard */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D8DC7BD026F8BBD400449FCC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				D8DC7BC326F8BAFE00449FCC /* Assets.xcassets */,
 				D8DC7BC526F8BAFE00449FCC /* LaunchScreen.storyboard */,
 				D8DC7BC826F8BAFE00449FCC /* Info.plist */,
 			);
-			path = SpringButtonTapped;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +147,6 @@
 			files = (
 				D8DC7BC726F8BAFE00449FCC /* LaunchScreen.storyboard in Resources */,
 				D8DC7BC426F8BAFE00449FCC /* Assets.xcassets in Resources */,
-				D8DC7BC226F8BAF800449FCC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,14 +166,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D8DC7BC026F8BAF800449FCC /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8DC7BC126F8BAF800449FCC /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D8DC7BC526F8BAFE00449FCC /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,7 +300,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9J35TQ48R5;
-				INFOPLIST_FILE = SpringButtonTapped/Info.plist;
+				INFOPLIST_FILE = SpringButtonTapped/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +319,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9J35TQ48R5;
-				INFOPLIST_FILE = SpringButtonTapped/Info.plist;
+				INFOPLIST_FILE = SpringButtonTapped/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
